@@ -15,7 +15,7 @@
  * Released: March 1st, 2014
  *
  *
- * popover any targetted content around any HTML element.
+ * popovers any targetted content around any HTML element.
  */
 
 (function ($) {
@@ -69,7 +69,7 @@
 		} 
 		
 		return this;
-		
+
 	}
 })(jQuery);
 
