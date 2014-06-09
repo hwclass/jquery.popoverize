@@ -30,7 +30,7 @@ $(document).ready(function () {
 		var popoverItems = $("div[id^=" + popoverPrefix + "]");
 		var len = $("div[id^=" + popoverPrefix + "]").length;
 		if ($("div[id^=" + popoverPrefix + "]").length > 0 || event.target.id.indexOf(popoverPrefix) > 0) {
-			for (var count = 0; count < len; count++) {
+			for (var count = 0; count &lt; len; count++) {
 				$($("div[id^=" + popoverPrefix + "]")[count]).fadeOut('normal', function () {
 					return;
 				});
