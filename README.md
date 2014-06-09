@@ -17,14 +17,12 @@ It is designed to be worked with Bootstrap 3.
 <pre lang="javascript">
 <code>
 $(document).ready(function () {
-
 	$('#text_area').on('click', function (event) {
 		$(this).popoverize();
 		if (!event.isPropagationStopped()) {
 			event.stopPropagation();       
 		}
 	});
-
 	$(document).on('click', function (event) {
 		var popoverPrefix = 'popover-';
 		var popoverItems = $("div[id^=" + popoverPrefix + "]");
@@ -37,7 +35,6 @@ $(document).ready(function () {
 			}
 		}
 	});
-
 });
 </code>
 </pre>
