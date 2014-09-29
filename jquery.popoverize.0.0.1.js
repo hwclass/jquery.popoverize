@@ -71,5 +71,6 @@
 		return this;
 
 	}
+	
 })(jQuery);
 
