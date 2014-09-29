@@ -15,29 +15,26 @@ It is designed to be worked with Bootstrap 3.
 
 ### usage (Javascript)
 <pre lang="javascript">
-	<code>
-		$(document).ready(function () {
-			
-			$('#text_area').on('click', function (event) {
-		    $(this).popoverize();
-		    if (!event.isPropagationStopped()) {
-					event.stopPropagation();       
-		    }
-			});
-
-			$(document).on('click', function (event) {
-		    var popoverPrefix = 'popover-';
-		    var popoverItems = $("div[id^=" + popoverPrefix + "]");
-		    var len = $("div[id^=" + popoverPrefix + "]").length;
-		    if ($("div[id^=" + popoverPrefix + "]").length > 0 || event.target.id.indexOf(popoverPrefix) > 0) {
-	        for (var count = 0; count < len; count++) {
-            $($("div[id^=" + popoverPrefix + "]")[count]).fadeOut('normal', function () {
-              return;
-            });
-	        }
-		    }
-			});
-			
-		});
-	</code>
+<code>
+$(document).ready(function () {
+	$('#text_area').on('click', function (event) {
+		$(this).popoverize();
+		if (!event.isPropagationStopped()) {
+			event.stopPropagation();       
+		}
+	});
+	$(document).on('click', function (event) {
+		var popoverPrefix = 'popover-';
+		var popoverItems = $("div[id^=" + popoverPrefix + "]");
+		var len = $("div[id^=" + popoverPrefix + "]").length;
+		if ($("div[id^=" + popoverPrefix + "]").length > 0 || event.target.id.indexOf(popoverPrefix) > 0) {
+			for (var count = 0; count &lt; len; count++) {
+				$($("div[id^=" + popoverPrefix + "]")[count]).fadeOut('normal', function () {
+					return;
+				});
+			}
+		}
+	});
+});
+</code>
 </pre>
